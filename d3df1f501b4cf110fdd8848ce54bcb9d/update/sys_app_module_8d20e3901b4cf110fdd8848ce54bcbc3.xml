@@ -17,14 +17,14 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_g_nioa_as_sci.niaid_sci_eq</roles>
+        <roles>x_g_nioa_as_sci.niaid_sci_eq,asset</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>bassem</sys_created_by>
         <sys_created_on>2023-07-11 19:14:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d20e3901b4cf110fdd8848ce54bcbc3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>NIAID Scientific</sys_name>
         <sys_overrides/>
         <sys_package display_value="Niaid Scientific Equipment" source="x_g_nioa_as_sci">d3df1f501b4cf110fdd8848ce54bcb9d</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="Niaid Scientific Equipment">d3df1f501b4cf110fdd8848ce54bcb9d</sys_scope>
         <sys_update_name>sys_app_module_8d20e3901b4cf110fdd8848ce54bcbc3</sys_update_name>
         <sys_updated_by>bassem</sys_updated_by>
-        <sys_updated_on>2023-07-11 19:16:46</sys_updated_on>
+        <sys_updated_on>2023-08-04 17:53:18</sys_updated_on>
         <timeline_page/>
         <title>NIAID Scientific</title>
         <uncancelable>false</uncancelable>
