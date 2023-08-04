@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>ip_address</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>M niaid restrict IP</name>
+        <order/>
+        <script><![CDATA[function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+  var saveAndClose = true;
+ //Type appropriate comment here, and begin script below
+  var pattern = /^((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))(,(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))*$/;
+    if (!pattern.test(newValue)) {
+        g_form.showFieldMsg("ip_address", "Invalid ip address. IP address should be delimited by a comma", "error");
+ callback(saveAndClose); 
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2023-08-01 19:49:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>daa177cb1b5cb59010f0866ae54bcbd4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>M niaid restrict IP</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Niaid Scientific Equipment" source="x_g_nioa_as_sci">d3df1f501b4cf110fdd8848ce54bcb9d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Niaid Scientific Equipment">d3df1f501b4cf110fdd8848ce54bcb9d</sys_scope>
+        <sys_update_name>sys_script_client_daa177cb1b5cb59010f0866ae54bcbd4</sys_update_name>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2023-08-03 18:20:41</sys_updated_on>
+        <table>u_cmdb_ci_niaid_scientific</table>
+        <type>onCellEdit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Niaid Scientific Equipment">d3df1f501b4cf110fdd8848ce54bcb9d</application>
+        <file_path/>
+        <instance_id>f9d010dddb9bd01060c53995f39619ff</instance_id>
+        <instance_name>niaidtest</instance_name>
+        <name>sys_script_client_daa177cb1b5cb59010f0866ae54bcbd4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;ip_address&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;M niaid restrict IP&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+  var saveAndClose = true;
+ //Type appropriate comment here, and begin script below
+  var pattern = /^((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))(,(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))*$/;
+    if (!pattern.test(newValue)) {
+        g_form.showFieldMsg("ip_address", "Invalid ip address. IP address should be delimited by a comma", "error");
+ callback(saveAndClose); 
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bassem&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-01 19:49:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;daa177cb1b5cb59010f0866ae54bcbd4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;M niaid restrict IP&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Niaid Scientific Equipment" source="x_g_nioa_as_sci"&gt;d3df1f501b4cf110fdd8848ce54bcb9d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Niaid Scientific Equipment"&gt;d3df1f501b4cf110fdd8848ce54bcb9d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_daa177cb1b5cb59010f0866ae54bcbd4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bassem&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-03 18:20:41&lt;/sys_updated_on&gt;&lt;table&gt;u_cmdb_ci_niaid_scientific&lt;/table&gt;&lt;type&gt;onCellEdit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1322532307</payload_hash>
+        <record_name>M niaid restrict IP</record_name>
+        <reverted_from/>
+        <source>c2e8aa481b243d9010f0866ae54bcb5d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2023-08-04 17:06:05</sys_created_on>
+        <sys_id>fcf8ea481b243d9010f0866ae54bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189c18375720000001</sys_recorded_at>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2023-08-04 17:06:05</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>407071ff551cb99060ea0e5c49f346f9</update_guid>
+        <update_guid_history>407071ff551cb99060ea0e5c49f346f9:1322532307,92d82a48cb243d90c9851c054cf66530:-1054044473,407071ff551cb99060ea0e5c49f346f9:1322532307,daa177cb7b5cb5901ce9ecb3e856a5d6:1824237056</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bassem</sys_created_by>
+        <sys_created_on>2023-08-04 17:16:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0dfd8bd5ad38412084946c2a08db2400</sys_id>
+        <sys_metadata>daa177cb1b5cb59010f0866ae54bcbd4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M niaid restrict IP</sys_name>
+        <sys_package display_value="Niaid Scientific Equipment" source="x_g_nioa_as_sci">d3df1f501b4cf110fdd8848ce54bcb9d</sys_package>
+        <sys_parent display_value="NIAID Scientific">da1d1f9c1b0cf110fdd8848ce54bcbba</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Niaid Scientific Equipment">d3df1f501b4cf110fdd8848ce54bcb9d</sys_scope>
+        <sys_scope_delete display_value="">5dbf378310044dddb414528f76060d11</sys_scope_delete>
+        <sys_update_name>sys_script_client_daa177cb1b5cb59010f0866ae54bcbd4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_daa177cb1b5cb59010f0866ae54bcbd4">fcf8ea481b243d9010f0866ae54bcb38</sys_update_version>
+        <sys_updated_by>bassem</sys_updated_by>
+        <sys_updated_on>2023-08-04 17:16:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
